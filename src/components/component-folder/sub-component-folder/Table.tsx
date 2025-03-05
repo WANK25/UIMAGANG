@@ -1,14 +1,11 @@
-import React from "react";
 import { FaSortAmountDown } from "react-icons/fa";
 
-// Definisi tipe data untuk props
 interface TableRow {
   timestamp: string;
   topic: string;
   status: "transmitted" | "received";
 }
 
-// Komponen fungsi dengan TypeScript
 function TableComponent({ data }: { data: TableRow[] }) {
   return (
     <div className="min-w-[563px] w-[563px] text-white flex flex-col gap-2">

@@ -15,10 +15,9 @@ interface ListTemparaturProps {
 }
 
 function ListTemparatur({ dataTemparatur }: ListTemparaturProps) {
-  // Simpan data dalam state agar bisa diubah
   const [dataList, setDataList] = useState(dataTemparatur);
 
-  // Fungsi untuk toggle status activate
+  // function for toggle status activate
   const toggleActivate = (id: number) => {
     setDataList((prevData) =>
       prevData.map((item) =>
@@ -51,7 +50,7 @@ function ListTemparatur({ dataTemparatur }: ListTemparaturProps) {
                 ? "text-greenDDS border-greenDDS bg-primary"
                 : "text-white border-redDDS bg-primary"
             }
-            onClick={() => toggleActivate(data.id)} // Klik untuk ubah status
+            onClick={() => toggleActivate(data.id)}
           />
 
           <Button

@@ -9,7 +9,7 @@ function Filter() {
       <p className="font-semibold text-xl">Filter : </p>
       <Input
         icon={<FaAngleRight className="w-[24px] h-[24px]" />}
-        text="yout topic ccccccccccccccccccccccccc"
+        text="your topic ccccccccccccccccccccccccc"
         className="text-{14px} font-medium w-[320px]"
       />
 

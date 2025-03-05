@@ -10,7 +10,7 @@ function InputTime() {
       flatpickr(inputRef.current, {
         enableTime: true,
         noCalendar: true,
-        dateFormat: "H:i:S", // Format 24 jam (hh:mm:ss)
+        dateFormat: "H:i:S",
         time_24hr: true,
       });
     }
